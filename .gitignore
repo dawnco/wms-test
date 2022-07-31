@@ -5,4 +5,4 @@ app.conf.php
 Runtime
 vendor
 composer.lock
-app.conf.php
+app.php
