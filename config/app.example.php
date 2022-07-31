@@ -16,10 +16,10 @@ return [
     ],
     "db" => [
         "default" => [
-            "hostname" => "8.219.113.230",
-            "username" => "dev",
-            "password" => "dev@LLC.123",
-            "database" => "loan_core",
+            "hostname" => "127.0.0.1",
+            "username" => "root",
+            "password" => "root",
+            "database" => "test",
             "port" => 3306,
             "charset" => "utf8mb4",
         ],
