@@ -1,0 +1,29 @@
+{
+  "name": "dawnco/wms-test",
+  "description": "test",
+  "authors": [
+    {
+      "name": "dawnco",
+      "email": "abke@qq.com"
+    }
+  ],
+  "autoload": {
+    "files": [
+    ],
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "require": {
+    "php": ">=7.4",
+    "ext-pdo": "*",
+    "ext-json": "*",
+    "dawnco/wms": "2.*"
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../wms/"
+    }
+  ]
+}
