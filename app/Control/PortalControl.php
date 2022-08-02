@@ -21,7 +21,6 @@ class PortalControl
         //return (new Response())->withContent("xxxx");
 
         Log::info("info");
-        throw new \Exception("xxx");
 
         return $r;
     }

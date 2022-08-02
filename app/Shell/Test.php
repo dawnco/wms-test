@@ -10,6 +10,8 @@ declare(strict_types=1);
 namespace App\Shell;
 
 use Wms\Fw\Shell;
+use Wms\Lib\HttpClient;
+use Wms\Lib\Pagination;
 
 class Test extends Shell
 {
@@ -19,8 +21,18 @@ class Test extends Shell
 
     public function handle(?array $param = null): void
     {
-        var_dump("------------------");
-        var_dump($param);
+        $url = "http://www.baidu.com";
+        $client = new HttpClient($url);
+        $client->execute();
+        var_dump($client->getRequestHeaderFromRequest());
+        $pagination = new Pagination([
+            'page' => 2,
+            'total' => 10,
+            "size" => 2,
+            "pageUrl" => "/a/{page}.html",
+            "firstPageUrl" => "/a/index.html",
+        ]);
+        //echo $pagination->html();
     }
 
 }
