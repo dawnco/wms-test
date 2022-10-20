@@ -6,3 +6,4 @@ Runtime
 vendor
 composer.lock
 app.php
+log/*.log

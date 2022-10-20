@@ -19,9 +19,7 @@ class PortalControl
         //var_dump($p1, $p2, $p3);
         $r = WDb::getData("show tables");
         //return (new Response())->withContent("xxxx");
-
         Log::info("info");
-
         return $r;
     }
 }

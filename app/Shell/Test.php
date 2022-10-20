@@ -21,6 +21,10 @@ class Test extends Shell
 
     public function handle(?array $param = null): void
     {
+
+        var_dump((boolean)1);
+        return;
+
         $url = "http://www.baidu.com";
         $client = new HttpClient($url);
         $client->execute();
